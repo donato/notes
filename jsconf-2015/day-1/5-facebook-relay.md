@@ -1,6 +1,8 @@
 # Mutations and Subscriptions in Relay - Laney Kuenzel
 Cool library that no one can use, but we can all learn from
 
+[Slides here](https://speakerdeck.com/laneyk/mutations-in-relay)
+
 ### Why?
 * There is typically a coupling of defining what you expose on server and what you want on client
 * Constantly fetching too much or too little
@@ -24,17 +26,13 @@ Cool library that no one can use, but we can all learn from
 With relay, you would define a change in the Query and the Render, and everything else JUST WORKS
 
 2. Suppose in a comment stream you want actions, for example adding a comment or liking something
-* We call these actions "mutations"
-
-* Past Strategy - write js, hit a custom endpoint, receive a response, update the DOM
-
-* Problem - each mutation used a custom endpoint, because it is repetitive and error prone
-
-* New Strategy - need a very structured API for writes
+ * We call these actions "mutations"
+ * Past Strategy - write js, hit a custom endpoint, receive a response, update the DOM
+ * Problem - each mutation used a custom endpoint, because it is repetitive and error prone
+ * New Strategy - need a very structured API for writes
     - The response holds what? a boolean? an ID? everything?
     - Ideally we return the relevant updated data
-    
-* Alternate motivating example
+ * Alternate motivating example
     - Suppose you want to add profile pics for people who liked a comment? Then you want to remove it again?
 
 ### Mutations
