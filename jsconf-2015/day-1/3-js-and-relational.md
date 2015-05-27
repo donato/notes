@@ -17,12 +17,12 @@ Relational DBs are great, how can we make JS environment more hospitable?
     - no transaction API?
 
 ### Tools
-    * Knex
-        - meant to be the lower level
-        - standardize the inconsistencies between relational dbs
-        - chain the queries instead of concatting strings select('*').from('').where('').then(fn(){});
-    * Bookshelf
-        - ORM - object relational mapper for relational
-        - fetch, fetchAll, save, destroy
-        - can use knex, but (maybe) doesn't need to , allowing a separation
+* Knex
+    - meant to be the lower level
+    - standardize the inconsistencies between relational dbs
+    - chain the queries instead of concatting strings select('*').from('').where('').then(fn(){});
+* Bookshelf
+    - ORM - object relational mapper for relational
+    - fetch, fetchAll, save, destroy
+    - can use knex, but (maybe) doesn't need to , allowing a separation
 
