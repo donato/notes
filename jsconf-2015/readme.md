@@ -7,4 +7,5 @@
 4. [Async Programming in ES7](4-es2016.md) - Jafar Husain
 5. [Mutations and Subscriptions in Relay](5-facebook-relay.md) - Laney Kuenzel
 6. [Polymer: The future of web components](6-polymer.md) - Chris Lorenzo
-7. [JavaScript CSS](7-other.md) - Parsha Pourkhomami and [Parallelism expirements](7-other.md) - Naveed Ihsanullah
+7. [JavaScript CSS](7-other.md) - Parsha Pourkhomami
+8. [Parallelism expirements](7-other.md) - Naveed Ihsanullah
