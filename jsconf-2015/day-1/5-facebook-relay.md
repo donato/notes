@@ -9,7 +9,7 @@ Cool library that no one can use, but we can all learn from
 * "Under fetching" "over fetching"
 * Keep logic for data fetching, and the rendering together - inside of a component
 * A relay component has two pieces
-    - Query - what to fetch *Declare your data requirements*
+    - Query - what to fetch - this is where you declare your data requirements
     - Render - how to draw
 
 ### FQL
