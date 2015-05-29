@@ -23,5 +23,6 @@ Drone demo, some code to keep the drone between a certain range of altitude.
 2. [Tungsten.js: Virtual DOM + Server Rendering in a Legacy Codebase](day-3/2-tungsten.md) - Andrew Rota
 3. [The Hybrid Backbone & React App](day-3/3-hybrid-backbone-react.md) - Peter Piekarczyk
 4. [Maintaining a Local Dev Meetup](day-3/4-dev-meetups.md) - Jacob Roufa
-5. [Visualizing process evolution]() - Dann Toliver
+5. [Visualizing process evolution](day-3/5-process-evolution.md) - Dann Toliver
+6. [Built-ins in Javascript](day-3/6-built-ins-javascript.md) - John Dalton
 
