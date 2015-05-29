@@ -9,3 +9,10 @@
 6. [Polymer: The future of web components](day-1/6-polymer.md) - Chris Lorenzo
 7. [JavaScript CSS](day-1/7-other.md) - Parsha Pourkhomami
 8. [Parallelism expirements](day-1/7-other.md) - Naveed Ihsanullah
+
+
+## Day 2
+
+Drone demo, some code to keep the drone between a certain range of altitude.
+
+[Code](day-2/drone)
