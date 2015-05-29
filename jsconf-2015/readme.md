@@ -20,3 +20,4 @@ Drone demo, some code to keep the drone between a certain range of altitude.
 
 ## Day 3
 1. [Organizational Design for Open Source](day-3/1-open-source.md) - Jory Burson
+2. [Tungsten.js: Virtual DOM + Server Rendering in a Legacy Codebase](day-3/2-tungsten.md) - Andrew Rota
