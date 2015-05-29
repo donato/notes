@@ -16,3 +16,7 @@
 Drone demo, some code to keep the drone between a certain range of altitude.
 
 [Code](day-2/drone)
+
+
+## Day 3
+1. [Organizational Design for Open Source](day-3/1-open-source.md) - Jory Burson
