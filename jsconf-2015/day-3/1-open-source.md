@@ -24,20 +24,19 @@ Here we talk about the *human systems* as opposed to the technical systems
         The means we execute to achieve the mission
     
 ### Everything is connected
-    technical success may lead to social failure
-Complex systems fail
+* technical success may lead to social failure
+* complex systems fail
+* always strive for simplicity
 
 ### Case study - Node
  * in 2012, Mikeal Rogers believes node was in a great position of growth
  * by 2014, node is forked due to political problems - people wanted changes but couldn't make them
  * today, io and node.js are trying to restore
-
-// Open governance model
-* open participation
-* open and transparent technical decision making
-
-* people are intrinsically against centralized power
-* we need to balance fear of chaos with fear of centralized power
+ * [Open governance model](http://en.wikipedia.org/wiki/Open-source_governance)
+    - open participation
+    - open and transparent technical decision making
+ * people are intrinsically against centralized power
+ * we need to balance fear of chaos with fear of centralized power
     - THIS IS ORGANIZATIONAL DESIGN (Governance + Purpose)
 
 ### Organizational Design
@@ -75,5 +74,5 @@ are constrained to produce designs which are copies of the communication structu
 
 
 
->> "Rising tides lift all boats"
+>"Rising tides lift all boats"
 
