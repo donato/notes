@@ -22,6 +22,6 @@ Drone demo, some code to keep the drone between a certain range of altitude.
 1. [Organizational Design for Open Source](day-3/1-open-source.md) - Jory Burson
 2. [Tungsten.js: Virtual DOM + Server Rendering in a Legacy Codebase](day-3/2-tungsten.md) - Andrew Rota
 3. [The Hybrid Backbone & React App](day-3/3-hybrid-backbone-react.md) - Peter Piekarczyk
+4. [Maintaining a Local Dev Meetup](day-3/4-dev-meetups.md) - Jacob Roufa
 
 
-what is irljs?
