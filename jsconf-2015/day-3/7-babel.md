@@ -40,6 +40,11 @@ Works at CloudFlare
 
 ### Browser Compatability
 * We can actually improve compatability for IE8 by transforming named functions
+* Watch out for IE8 named functions 
+```js
+( var e = function g() {}; e === g // not in IE8! )
+```
+
 
 ### Emojis
 * vars can be unicode characters, even representing emojis :)
