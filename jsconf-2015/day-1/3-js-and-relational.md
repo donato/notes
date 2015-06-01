@@ -1,5 +1,6 @@
 # JS on ACID - Tim Griesser
-[Slides here](https://speakerdeck.com/tgriesser/making-relational-cool-again-or-javascript-on-acid)
+
+>[Slides here](https://speakerdeck.com/tgriesser/making-relational-cool-again-or-javascript-on-acid)
 
 Relational DBs are great, how can we make JS environment more hospitable?
 

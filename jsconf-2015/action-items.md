@@ -16,6 +16,12 @@
         + For example, you click "like" on facebook, and see the update, but the update hasn't propagated to servers yet
     - This is directly applicable to player actions against the chromecast
     - For more info check notes from Day 1 Facebook Relay
+1. Mobile interaction
+    - FastClick
+    - Angular Mobile
+1. App cache file
+    - Allows an app to check for cache invalidation of all files simultaneously instead of independently
+    - Could be a major win for mobile team
     
 ## Trends
 

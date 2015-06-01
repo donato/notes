@@ -1,5 +1,11 @@
 # JSConf
 
+# Note Archives
+* [Una Kravets](https://github.com/una/js-conf-notes/)
+* [Jennifer Mann](https://gist.github.com/jennifer-mann/544da3863bbe47773d70)
+* [Noah Chase](https://github.com/nchase/talks/tree/master/2015/jsconf)
+* [Ben Spoon](http://blog.benspoon.com/js-conf-notes/)
+
 ## Day 1
 1. [Whoa, you can test IE on a Mac?](day-1/1-testing-in-ie.md) - Rey Bango
 2. [Headless Testing Against Real Browsers](day-1/2-headless-testing.md) - Mike Ball
