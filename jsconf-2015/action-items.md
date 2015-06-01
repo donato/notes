@@ -11,10 +11,6 @@
 1. for visual diff comparison, try node-huxley
     - Huxley, was originally created by Facebook as a Python tool which was cancelled and deprecated
     - It was resurrected by open source community as node-huxley
-1. Serve different builds per user-agent
-    - Optimize to include only the CSS prefixes needed, and only the shims neccessary
-    - Smaller file size for everyone, faster load for flash fallback browsers
-    - Negative is more complex build and deploy system
 1. "Optimistic update"
     - This is the idea that when someone makes an action, the UI should show it, even before the model updates
         + For example, you click "like" on facebook, and see the update, but the update hasn't propagated to servers yet
@@ -33,4 +29,8 @@
     - New Microsoft browser is NOT "Spartan" it will be called "Edge"
     - Edge will use a jscript engine called "Chakra" instead of V8
         + Although this is even more fracturing, they aim to match standards
+1. Serve different builds per user-agent
+    - Optimize to include only the CSS prefixes needed, and only the shims neccessary
+    - Smaller file size for everyone, faster load for flash fallback browsers
+    - Negative is more complex build and deploy system
 1. Web Components are getting closer, but still requires libraries which are mostly hacky
