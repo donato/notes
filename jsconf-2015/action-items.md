@@ -4,11 +4,11 @@
 1. Consultants are bringing tools/libraries to companies, we should have relationships with them
     - They can be more effective in promoting a good product than a sales team
 1. See if we can benefit from a small virtual dom library 
-    - trending today is paperclip (41kb) - the fastest
-    - react (119kb) -  the most hyped
-    - ractive (165kb) - the first
-    - virtual-dom (5.8kb) - the smallest (aka the one we might use)
-1. for visual diff comparison, try node-huxley
+    - Trending today is paperclip (41kb) - the fastest
+    - React (119kb) -  the most hyped
+    - Ractive (165kb) - the first
+    - Virtual-dom (5.8kb) - the smallest (aka the one we might use)
+1. For visual diff comparison, try node-huxley
     - Huxley, was originally created by Facebook as a Python tool which was cancelled and deprecated
     - It was resurrected by open source community as node-huxley
 1. "Optimistic update"
@@ -22,6 +22,11 @@
 1. App cache file
     - Allows an app to check for cache invalidation of all files simultaneously instead of independently
     - Could be a major win for mobile team
+1. Immutability prevents bugs
+    - Should be applied to player config and media events
+    - We can make helper methods for immutable data structures
+    - Facebooks implementation [immutable-js](https://github.com/facebook/immutable-js)
+    - [Mori](https://github.com/swannodette/mori)
     
 ## Trends
 
