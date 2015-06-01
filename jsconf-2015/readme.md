@@ -25,4 +25,5 @@ Drone demo, some code to keep the drone between a certain range of altitude.
 4. [Maintaining a Local Dev Meetup](day-3/4-dev-meetups.md) - Jacob Roufa
 5. [Visualizing process evolution](day-3/5-process-evolution.md) - Dann Toliver
 6. [Built-ins in Javascript](day-3/6-built-ins-javascript.md) - John Dalton
-
+7. [Javascript Transformations](day-3/7-babel.md) - Sebastian McKenzie
+8. [Nemo. The natural nodejs automation soluction](day-3/8-nemo.md) - Matt Edelman
