@@ -1,6 +1,10 @@
 # Tungsten.js: Virtual DOM + Server Rendering in a Legacy Codebase - Andrew Rota
 People from Wayfair.com discussing a way to bring virtual dom into a legacy code base of thousands of files
 
+@AndrewRota
+
+Slides [here](http://www.slideshare.net/andrewrota/tungsten-jsconf)
+
 ### Why?
 * Performance - a 1 second app loses x% of customers
 * Server side was pretty quick, client side was the bottleneck

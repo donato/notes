@@ -1,6 +1,8 @@
 # Organizational Design for OSS - Jory Burson
 COO of Bocoup talks about challenges to creating human organizations around software development
 
+@jorydotcom
+
 ### How to approach a challenge?
 1. Do we have an objective/goal?
 2. What combination of resources are needed to achieve it?
