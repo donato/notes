@@ -2,7 +2,7 @@
 
 1. Make sure our purpose as a product is precise, well understood and prominent
 1. Consultants are bringing tools/libraries to companies, we should have relationships with them
-    - They can be more effective in promoting a good product than a sales team
+    - They can be an effective force in funneling people to our sales team
 1. See if we can benefit from a small virtual dom library 
     - trending today is paperclip (41kb) - the fastest
     - react (119kb) -  the most hyped
