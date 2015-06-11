@@ -45,3 +45,5 @@
     - Smaller file size for everyone, faster load for flash fallback browsers
     - Negative is more complex build and deploy system
 1. Web Components are getting closer, but still requires libraries which are mostly hacky
+1. Pair programming
+    - More [info](http://sundeepgupta.ca/breaking-down-successful-pair-programming/)
