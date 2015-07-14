@@ -1,11 +1,5 @@
 # JSConf
 
-# Note Archives
-* [Una Kravets](https://github.com/una/js-conf-notes/)
-* [Jennifer Mann](https://gist.github.com/jennifer-mann/544da3863bbe47773d70)
-* [Noah Chase](https://github.com/nchase/talks/tree/master/2015/jsconf)
-* [Ben Spoon](http://blog.benspoon.com/js-conf-notes/)
-
 ## Day 1
 1. [Whoa, you can test IE on a Mac?](day-1/1-testing-in-ie.md) - Rey Bango
 2. [Headless Testing Against Real Browsers](day-1/2-headless-testing.md) - Mike Ball
@@ -33,3 +27,10 @@ Drone demo, some code to keep the drone between a certain range of altitude.
 6. [Built-ins in Javascript](day-3/6-built-ins-javascript.md) - John Dalton
 7. [Javascript Transformations](day-3/7-babel.md) - Sebastian McKenzie
 8. [Nemo. The natural nodejs automation soluction](day-3/8-nemo.md) - Matt Edelman
+
+# Other Note Archives
+* [Una Kravets](https://github.com/una/js-conf-notes/)
+* [Jennifer Mann](https://gist.github.com/jennifer-mann/544da3863bbe47773d70)
+* [Noah Chase](https://github.com/nchase/talks/tree/master/2015/jsconf)
+* [Ben Spoon](http://blog.benspoon.com/js-conf-notes/)
+
