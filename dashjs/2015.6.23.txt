@@ -1,0 +1,43 @@
+# Dash.JS Meeting June 23rd
+
+## Updates
+
+* [Dash.JS v1.4](https://github.com/Dash-Industry-Forum/dash.js/releases/tag/v1.4) released on June 11th
+* In May, [Firefox 38](https://www.mozilla.org/en-US/firefox/38.0/releasenotes/) began supporting basic MSE - not production ready
+    - Good news! Growing pains to be expected.
+    - EME/MSE [release notes](https://support.mozilla.org/en-US/kb/enable-drm)
+
+## v 1.5 Planning
+
+* Discuss surfacing internal events, such as manifest refresh
+
+### Baseurl
+We use the baseurl when we think the mpd file will not work.
+
+Should we have an API for how many times to retry before falling back to baseurl?
+ * Would people actually use it?
+ * Is the challenge how many times to do it, or how long to wait?
+ * Should we have a delay between retries?
+ * We don't need to handle everything, lets **do one thing well**
+
+
+### Mulitiple audio tracks
+Default from the stream vs from the client
+do a fuzzy match?
+having an API for this seems important
+
+
+### TrickPlay
+https://en.wikipedia.org/wiki/Trick_mode
+* http://open.pbs.org/blogs/open-pbs/how-pbs-is-enabling-apples-trick-play-mode/
+* If we have requirements on how this should work, get in touch with Karishma
+
+Given a standard manifest, we include a trickplay track for the same video which includes keyframes only
+
+### Bugs
+* A few safari bugs
+
+## v1.6?
+Dijon
+ES6
+

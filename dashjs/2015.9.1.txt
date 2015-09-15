@@ -1,0 +1,13 @@
+# Bi-Weekly meeting
+
+First priority is getting an RC out for 1.5
+
+* 5 outstanding PRs
+- need someone to decide which will get pulled in and which won't (this is behind schedule)
+- then lock down
+
+Process
+* They want to do more patch releases for bugfixes, since major releases occur once per 3 months
+* discussion on removing minified files from repo
+
+Sprint Planning Session on Sept 15th

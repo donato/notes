@@ -1,0 +1,26 @@
+# September 15th, 2015
+
+## Status updates
+
+* seeking across period boundaries is buggy
+* Request for live stream simulator
+  - need a sample stream for multi-stream audio and multi-stream video
+  - Perhaps we could share our elephants dream video (multi-audio)
+* Most security features complete, nothing slated currently
+  - adobe access is not working with us, may not ever occur
+* discussion about https/http for loading fragments
+  - Should we match against the page or against the manifest?
+
+## Upcoming
+
+* Dec 9th - Dash-JS meeting in San Francisco
+  - San Francisco at Microsofts office or Akamai's
+  - day meeting with dinner plans as well
+* Dec 10th/11th - Dash-IF meeting in San Francisco
+* Next week Tuesday, 2pm-3pm
+  - Sprint planning
+  - discuss browserify/es2015/dijon/etc
+
+
+
+

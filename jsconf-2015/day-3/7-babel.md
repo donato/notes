@@ -38,6 +38,7 @@ Works at CloudFlare
     - We should avoid the unspecified usages
     - Should not add functionality
 
+
 ### Browser Compatability
 * We can actually improve compatability for IE8 by transforming named functions
 * Watch out for IE8 named functions 
@@ -48,3 +49,4 @@ Works at CloudFlare
 
 ### Emojis
 * vars can be unicode characters, even representing emojis :)
+
