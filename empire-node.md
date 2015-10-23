@@ -199,3 +199,36 @@ Plenty of opportunities to contribute, writing unit tests, docs or tutorials
 - kickstarter
 
 Writing hardware apps (ie, applications to control a device programmer) is out of date. She goes through her process of updating it using [NW](http://nwjs.io/).
+
+
+
+## The Social Coding Contract
+- Justin Searls @searls
+
+Companies can help each other succeed
+Is open source good?
+
+Unintended consequences - is amazon shipping goods close to you before you purchase it?
+
+Dependency management - it's gotten easy to consume them. like commodities, they got easier to consume over time.
+ - always more convenience! short term convenience in exchange for long term fragility. 
+ - it allows you to use other peoples code that we don't know
+
+It's never been easier to ship code, but our shipped code has never been more complex.
+
+"make an empty project, wait a year, update, it'll break"
+
+There is a maintener <----> early-adopter relationship
+late-adopters remove the fun of the maintainer!
+
+The more people you trust, the more people you don't even realize you trust!
+Recognize when projects are marketing to you.
+the move of opensource has been making adoption easier and easier
+
+async chat - realtime chat - phone call - video chat - real life
+
+https://www.nitrous.io/app/#/containers/new
+
+***Adopting a dependency outsources our ability to understand a task***
+It incurs an "understanding" debt, which is unacceptable for embedded systems.
+
