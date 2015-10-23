@@ -89,5 +89,36 @@ git is good for developers, but bad for domain experts
 
 
 ## Using Graph Theory to Build a Recommendation Engine in Node.js
-- Keith Horwood
+- Keith Horwood [github](github.com/keithwhor)
+
+Requirements
+ * Recommend based off of listing OR user
+ * Many reccomendations
+ * clickbait
+ * deliver in 2 weeks
+
+** Solution **
+Use a graph!
+Nodes : Users and Listings
+Edges : Requests, favorites, views (interactions)
+
+Benefits of using a Graph
+1. Node-type agnostic
+1. Users generate recommendations for us
+1. Graph traversals are fast - this is a BFS outwards
+
+Technologies
+[Neo4j](https://github.com/neo4j/neo4j) - biggest
+pros - documented, just works
+cons - ehh, its fine
+
+Or build it yourself! [Nodal](github.com/keithwor/nodal)
+
+[[ talks about making a graph class]]
+pro's - simple
+con's - it's all in memory
+
+To get recommendations do a simple search using dijksra's algorithm, quitting when you have the desired number of recomendations
+For example, grab 100 and store them as recommendations once per day. Then choose 3 random ones every time we want a recommendation.
+Store the graphs on disk in case of server resets
 
