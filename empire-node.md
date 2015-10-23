@@ -191,3 +191,11 @@ Thin clients - do almost everything server side
 demo of how we can use [electric imp](https://electricimp.com/) and [Particle Photon](https://store.particle.io/)
 Plenty of opportunities to contribute, writing unit tests, docs or tutorials
 
+
+
+
+## Refactoring the Dinosaur
+- Suz Hinton [@noopkat](twitter.com/noopkat)
+- kickstarter
+
+Writing hardware apps (ie, applications to control a device programmer) is out of date. She goes through her process of updating it using [NW](http://nwjs.io/).
