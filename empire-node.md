@@ -122,3 +122,32 @@ To get recommendations do a simple search using dijksra's algorithm, quitting wh
 For example, grab 100 and store them as recommendations once per day. Then choose 3 random ones every time we want a recommendation.
 Store the graphs on disk in case of server resets
 
+
+## Making front-end modules actually work
+[Lin Clark](twitter.com/LinClark)
+
+***Module Shaming*** - Do webpack people even know what modular is?
+Should npm packages and github repos have a 1-to-1 mapping?
+Modular doesn't necessarily mean "reusable chunks of code" or even "not labeled for individual sale"
+
+Modularity is more about "readability" and creating cognitive chunks, than about re-usability.
+
+Alternative ideas used to define modularity :
+cohesion - getter/setter on a model, belong together
+coupling - degree of interdependence between modules
+
+We want to maximize cohesion and minimize coupling. But we don't actually care about re-usability, even though it is a possible perk.
+
+In an html file you can mark dependencies for scripts, but not between scripts. Well maybe you could, but you wouldn't want to!
+
+In webpack/browserify, you can
+
+browserify - transpiler
+webpack - loaders > is this still modular?
+
+Maybe not, but in webpack you can create "intermediary modules" using a feature called "libraries" and using externals.
+
+webpack can decouple css class names using ["local:"](https://medium.com/seek-ui-engineering/the-end-of-global-css-90d2a4a06284#.rl1wdxe16) which creates random id's
+
+[Slides](http://slides.com/linclark/empirenode)
+
