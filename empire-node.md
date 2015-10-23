@@ -151,3 +151,43 @@ webpack can decouple css class names using ["local:"](https://medium.com/seek-ui
 
 [Slides](http://slides.com/linclark/empirenode)
 
+
+
+## Rapidly Iterating on Microservices using Docker and Node.js
+- William Blankenship
+- SourceNode - works on the docker images
+
+DOCKER!
+- addresses the pains of cat wrangling (?) and yak-shaving(?!)
+
+* Don't use node for gzip/ssl type problems, use the server like nginx.
+
+Dockerizing will be a challenge for most applications, but forces you to be more careful with your
+init process. You should not have to touch db's or environment settings.
+
+martinfowler.com
+nodesource.com
+
+
+
+
+## Building desktop apps with Node.js
+
+We are here for Electron, what is it!? It's a tool for using web technology to make desktop apps - for example the Atom file editor. Allows you to build offline apps, shell apps, whatever. Slack uses it too.
+
+You bundle a specific version of chromium into the build. 
+
+npm install -g prebuilt
+
+Can use the latest node and latest chromium!
+Can use native os things like menu bars, dialogues, task bars etc...
+
+
+## Node.js in the IOT
+@nodebotanist - the@nodebotani.st
+- Kassandra
+- boucoup
+Thin clients - do almost everything server side
+demo of how we can use [electric imp](https://electricimp.com/) and [Particle Photon](https://store.particle.io/)
+Plenty of opportunities to contribute, writing unit tests, docs or tutorials
+
