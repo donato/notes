@@ -8,29 +8,30 @@
 
 #### From v0.10 to v4.0
 
-**The age of discontent, early 2014
-Joyent (corporate stewardship)
-Node-forward (use community resources to drive development)
-together leads to the node-advisory board, where community members have some influence
+**The age of discontent**, early 2014
+- Node.js is owned by Joyent (corporate stewardship)
+- It stagnates, leading to 'node-forward' a stratedgy to use community resources to drive development
+- This is formalized in the node-advisory board, where community members have some influence
 
 It wasn’t enough.
 
-** The great Leap
-io.js, November-January end of 2014
-io.js is created, a big forking of community
+** The Great Leap **, November-January end of 2014
+- A subset of the community creates io.js
+- This one has no corporate backing, but moves a lot faster
+- Community is now divided
 
-** The summer of convergence
-io.js joins back into the community
+** The summer of convergence**, 
+- io.js joins back into the community
 
 -------------
 overall they went with the “open governance” principle, using corporate PM’s, and corporate contributers as well.
 
 
-#### Node.js LTS 
-- https://medium.com/@nodesource/essential-steps-long-term-support-for-node-js-8ecf7514dbd#.6dskqths7
-** LTS release
-Goal - stability, predictability, build trust (this can be used for serious things)
-Supported for 18 months + 12 months
+#### Node.js Release Strategy
+They decided to utilize a [LTS pattern](https://medium.com/@nodesource/essential-steps-long-term-support-for-node-js-8ecf7514dbd#.6dskqths7) for releases.
+** LTS release **: 
+- Goal - stability, predictability, build trust (this can be used for serious things)
+- Supported for 18 months + 12 months of depr
 ** Stable release
 come more often, every 6 months, will hold a stable version of V8, not upgraded except in major versions
 ** Canary
