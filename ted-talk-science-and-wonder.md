@@ -72,4 +72,34 @@ Principles of LifeCode
 5. ..?
 
 
+## Arati Prabhakar
+Director, DARPA
+
+She began by giving us a nice overview of what DARPA actually does,
+which ranges from solving military problems, to imagining the world of tomorrow.
+Their accomplishments include building the internet, neutron detectors,
+explosion proof cars and lately new neuro-technologies.
+
+Arati believes that the next big game-changer will be how technology interfaces with
+people. The human brain is basically a supercomputer, being forced to communicate with
+the super-computers of today via a keyboard and mouse. As antiquated as a dial-up modem.
+
+DARPA has been experimenting with direct interfaces to the brain, two of which she shared
+with us. The first was a woman paralyzed from the neck down, who controls a prosthetic arm
+using only her mind. There is some form of chip embedded into her brain. She uses this to
+feed herself a bar of chocolate - a pretty incredible feat. The next experiment was giving
+feedback directly back into the brain, allowing a similarly paralyzed soldier to "sense"
+when the fingers of his prosthetic hand were being touched. He could even distinguish 
+specifically which finger was being touched.
+
+Is there a future where human enhancement becomes ubiquitous the same way the internet is?
+Nobody imagined a decade ago that access to the internet would become a "basic human right"
+and yet it has. What if in the future, access to memory and intellectual enhancement is the same?
+What if there is a divide between the haves and the have-nots of embedded neuro-interfaces?
+
+From here we took a philosophical turn. Is all this okay? Is there a line that
+we shouldn't cross? Whose job is it to define and defend this line? Will there be
+a future where enhanced soldiers can control their heart-rate via brainchips to maintain
+focus for longer time? Will we need some type of Geneva Convention to regulate the usage
+of neural enhancements in war?
 
