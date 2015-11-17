@@ -1,8 +1,6 @@
 # Chrome Dev Summit
 November 17th - 18th, 2015
-
-Held in Google's Mountain View office.
-Chat : https://chromiumdev.slack.com/
+Mountain View, CA
 
 
 ## Day 1
