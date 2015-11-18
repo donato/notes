@@ -15,3 +15,5 @@ major growth is happening in countries with 2G internet
  * [App Shells and Web Push](day-1/5-app-shells.md)
  * [Physical World](day-1/6-physical-world.md)
  * [Polymer SOTU](day-1/7-polymer.md)
+ * Building a Polymer app
+ * Accessibility
