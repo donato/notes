@@ -17,3 +17,12 @@ bobby capital one
 greg washington postf
 
 netflix dude - priority in network for scheduler
+
+ * Don't use Error objects until exit
+ * requestIdleCallback polyfill for analytics
+ * Think about asm.js
+
+Projects that could use insight
+ * Web Assembly
+ * MSE v2
+ * Presentation API

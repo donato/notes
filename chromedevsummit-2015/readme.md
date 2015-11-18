@@ -22,4 +22,5 @@ major growth is happening in countries with 2G internet
  * [Dev Tools](day-2/1-dev-tools.md)
  * [RAIL](day-2/2-rail.md)
  * [More RAIL](day-2/3-more-rail.md)
+ * [V8 Performance](day-2/4-v8.md)
  
