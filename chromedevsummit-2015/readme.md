@@ -2,6 +2,9 @@
 November 17th - 18th, 2015
 Mountain View, CA
 
+Big ideas
+the web is a first-class application platform
+major growth is happening in countries with 2G internet
 
 ## Day 1
 
@@ -9,3 +12,6 @@ Mountain View, CA
  * [Developing for Billions](day-1/2-developing-for-billions.md)
  * [Progressive Web Apps](day-1/3-progressive-web-apps.md)
  * [Security](day-1/4-security.md)
+ * [App Shells and Web Push](day-1/5-app-shells.md)
+ * [Physical World](day-1/6-physical-world.md)
+ * [Polymer SOTU](day-1/7-polymer.md)
