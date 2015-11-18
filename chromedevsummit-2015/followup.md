@@ -26,3 +26,4 @@ Projects that could use insight
  * Web Assembly
  * MSE v2
  * Presentation API
+ * PerformanceObserver and IntersectionObserver
