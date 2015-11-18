@@ -15,3 +15,5 @@ joey about stuff
 
 bobby capital one
 greg washington postf
+
+netflix dude - priority in network for scheduler
