@@ -17,3 +17,6 @@ major growth is happening in countries with 2G internet
  * [Polymer SOTU](day-1/7-polymer.md)
  * Building a Polymer app
  * Accessibility
+ 
+## Day 2
+ * [Dev Tools](day-2/1-dev-tools.md)
