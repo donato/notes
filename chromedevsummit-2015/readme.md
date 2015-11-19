@@ -25,4 +25,6 @@ major growth is happening in countries with 2G internet
  * [V8 Performance](day-2/4-v8.md)
  * [Real World Rail](day-2/5-real-world-rail.md)
  * [HTTP2](day-2/6-http2.md)
+ * [Flipkart](day-2/7-flipkart.md)
+ * [Leadership Panel](day-2/8-leadership-panel.md)
  
