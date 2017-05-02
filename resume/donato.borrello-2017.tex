@@ -1,0 +1,204 @@
+\documentclass[oneside, final]{scrartcl}
+ 
+% For line-spacing of header
+%  http://ftp.math.purdue.edu/mirrors/ctan.org/macros/latex/contrib/soul/soul.pdf
+\usepackage{soul}
+
+% For fancy title
+\usepackage{titlesec}
+
+% For comments
+\usepackage{verbatim}
+
+% For the icons
+\usepackage{marvosym}
+
+% For greying of skills
+\usepackage{tabularx,colortbl}
+
+\usepackage[
+    margin=2cm
+]{geometry}
+
+\addtolength{\oddsidemargin}{-.25in}
+\addtolength{\evensidemargin}{-.25in}
+\addtolength{\topmargin}{-.25in}
+\addtolength{\textheight}{1.75in}
+\addtolength{\textwidth}{.5in}
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape}
+\definecolor{light-gray}{gray}{0.9}
+\newcommand{\lang}[1]{\colorbox{light-gray}{\texttt{#1}}}
+
+ 
+\begin{document}
+\begin{center}
+ 
+\textsc{\LARGE{\so{Donato E. Borrello}}}\\
+\so{4 Park Avenue \#9B, New York, NY 10016}\\
+\so{ {\Large\Letter} venar303@gmail.com \ {\Large\Telefon} (917) 280-0069}
+
+\section{Summary}
+\begin{flushleft}
+
+Motivated and enthusiastic technology leader with 15 years of experience writing semicolons, leading teams and delivering products. Has repeatedly been able to dive-deep on technical problems and emerge as a thought-leader in various fields. Recognized for his ability to gather information and provide a clear vision for achieving both short and long-term goals. Able to translate needs from business to the technical side and back. Proven track-record for hiring a talented, complementary, and highly effective team.
+\end{flushleft}
+
+
+\section{Education}
+Bachelor of Science, Computer Science\hfill May 2012\\
+University of Rochester\hfill Rochester, NY\\
+
+\section{Experience}
+\textsc{JW Player \hfill April 2016 - Present\\}
+\textsc{Lead Engineer\hfill New York, NY\\}
+\begin{itemize}
+    \vspace{-4pt}
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\leftmargin}{-5mm}
+	\item Hired and lead a team of 8 to be self-sufficient, guiding them to timely completion of projects.
+	\item Iteratively delivered products, which doubled customer engagement twice in 6 months.
+	\item Drove data architecture decisions when scaling systems to handle over 60k events/sec.
+	\item Centralized information related to systems architecture and created the de-facto blueprint used by all members of our organization.
+	\item Pushed a values-driven culture and empowered IC's to make trade-offs independently when appropriate. 
+	%\item Drive data architecture decisions when scaling systems, such as Storm from 25k req/sec to 50k req/sec.
+	\item Performed technical comparisons and break-even analysis of technology stacks, then negotiated package pricing with cloud providers including AWS, Snowflake and ModeAnalytics.
+	\item Revamped processes for Database Change Management and Incident Response to 50 engineers across 6 teams; decreasing service outages from 0.15\% to 0.01\% weekly.
+	% \item Created onboarding program for new engineers which has helped 20+ new hires hit the ground running.
+\end{itemize}
+
+\textsc{JW Player \hfill May 2014 - April 2016\\}
+\textsc{Senior Software Engineer\hfill New York, NY\\}
+\begin{itemize}
+    \vspace{-4pt}
+	\setlength{\itemsep}{1pt}
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\leftmargin}{-5mm}
+	% \item Technical Lead on projects for the embedded player - scale is currently 17 billion plays per month.
+	\item Lead Engineer on implementing VPAID2 specification from IAB, which services over 250M ads/month.
+	\item Lead Engineer on implementing HLS standard from Apple, which services over 6Bn video streams/month.
+	\item Redesigned the javascript message bus for higher performance, shaving 20\% off startup time.
+	\item Prototyped and built a full-stack testing framework \textit{Squash} to combine automated and manual tests.
+	\item Through iterative development, \textit{Squash} decreased regression testing from 4 weeks to 1 week, to 3 days.
+\end{itemize}
+
+\textsc{FactSet Research Systems \hfill June 2012 - April 2014\\}
+\textsc{Software Engineer\hfill New York, NY\\}
+\begin{itemize}
+    \vspace{-4pt}
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\leftmargin}{-5mm}
+	\item Performed as Technical Lead on a full stack analytics reporting application, which had the fastest rendering time among hundreds in the CoMA division of FactSet.
+	\item Learned to maintain, extend, and love legacy codebases. Or at least love refactoring them. Never learned to love VMS.
+	\item Created a tool \textit{p4-compare}, which let developers compare the cyclomatic complexity of their change against what is in master.
+%	\item Mentored two new engineers, and is very active in code reviews.
+	\item Worked across departments creating a new Backbone toolkit for rapidly prototyping new reports. It is currently improving productivity for teams in New York, Norwalk and London.
+\end{itemize}
+
+
+
+
+% End first page
+\clearpage
+
+
+
+\textsc{Rochester Human-Computer-Interaction Group \hfill June 2011 - May 2012\\}
+\textsc{Research Fellowship with Xerox\hfill Rochester, NY\\}
+\begin{itemize}
+  \vspace{-4pt}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\leftmargin}{-5mm}
+  \item Researched methods to provide economically viable real-time audio transcription for hearing-impaired internet users.
+  \item Developed PHP-API for Amazon Mechanical Turk which allowed easier integration of external data-sources and enhanced real-time processing capabilities.
+  \item Participated in project planning, design, and development of services for gathering and retaining Amazon Mechanical Turk workers.
+ % \item Awarded Xerox Fellowship for my personal contributions
+\end{itemize}
+
+
+
+\textsc{Freelance \hfill  Childhood - Present\\}
+\textsc{Full Stack Game Developer\hfill Rochester, NY\\}
+\begin{itemize}
+    \vspace{-4pt}
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\leftmargin}{-5mm}
+	\item Created a new interface to an online game, Kings of Chaos, to enhance and improve fundamental gameplay.
+	\item Provided real-time analytics comparing 800+ registered users over 13 years.
+	 %At peak, the system logged 1,472,038 user-events in one month January, 2009.
+	\item Wrote bots to simulate human interaction, automating every aspect of gameplay. Required header-spoofing, captcha cracking, and basic NLP. (Don't tell the admins!)
+\end{itemize}
+
+
+\section{Conferences}
+\begin{flushleft}
+\textbf{The Nitty Gritty of Adaptive Video Transmuxing \hfill EmpireJS, 2016\\}
+A 30 minute presentation on strategies for efficiently transmuxing video for improving the
+time to first frame. The core principal is switching from batch computation to streaming.
+I discuss why Communicating Sequential Processes (CSP) works as a strong alternative to streams with back pressure.
+\end{flushleft}
+
+\section{Publications}
+\begin{flushleft}
+\textbf{Real time Captioning by Non-Experts\\}
+Nominated for best paper in the the 25th Annual UIST Conference 2012: 23-34\\
+
+\vspace{10pt}
+
+\textbf{Online Sequence Alignment for Real-Time Audio Transcription by Non-Experts \\}
+Published by the 26th Annual AAAI Conference 2012\\
+\end{flushleft}
+
+
+\section{Other Contributions}
+\begin{itemize}
+   \begin{comment}
+        \item CIO of Beach Recovery Foundation, non-profit working to reverse human effect on beach erosion
+        \item CTO of Simplify Reality, distills current events into 400 word summaries for millennials
+    \end{comment}
+    \item Founder of Election Reform New York - a group pushing for Instant Run Off elections in NY
+    \item Maintainer of Google's Karma repository, a javascript test runner
+    \item Code contributor to Google's Shaka repository, a DASH video player
+    \item Code contributor to Blender, an open-source 3D modeling engine
+    \item Security research for KingsOfChaos.com, a text-based mmo
+    \item Art contributor to Planeshift.it, an open-source 3D mmorpg
+    \item Consultant for AI-Coin, a bitcoin variant which sacrifices decentralization for sub-second transactions
+    \item Member of think-tank for MiMedia, a Brooklyn based startup for cloud storage of media
+\end{itemize}
+
+
+
+\section{Lists}
+\begin{itemize}
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\leftmargin}{-5mm}
+	\item \textbf{Job Experience:}  \lang{Javascript}, \lang{Python}, \lang{C++}, \lang{Java}, \lang{Node}, and \lang{git} \\
+	\item \textbf{DB's in Prod:} \lang{Redis}, \lang{Mongo}, \lang{PostgreSQL}, \lang{MySQL} \\
+	\item \textbf{Fun Stuff:}  \lang{Haskell}, \lang{Starcraft}, \lang{TypeScript}, \lang{Database Design} \\
+	\item \textbf{Not lovin' it:} \lang{tabs}, \lang{Flask}, \lang{lag}, \lang{Angular}, \lang{Pager Duty}
+	\item \textbf{Favorite Places:}
+            \lang{New York, New York},
+            \lang{Puglia},
+            \lang{Turks'n Caicos},
+            \lang{Tamarindo},
+            \lang{Buenos Aires},
+\end{itemize}
+
+
+
+\end{center}
+\end{document}
