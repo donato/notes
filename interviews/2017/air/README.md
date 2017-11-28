@@ -16,3 +16,26 @@ Write a web service which:
 Start time: 7pm EST
 
 
+### API
+```json
+POST \<api\>/concat/
+POST BODY {
+    head: {
+        url: 'path to publicly accessible mp4 file'
+    },
+    tail: {
+        url: 'path to publicly accessible mp4 file'
+    },
+    output: {
+        type: 'local', # or s3
+        path: '~/hi/'
+    },
+    authorization: 'YOUR_SECRET_HERE',
+    webhooks: {
+        url: 'abc'
+    }
+}
+
+Response 200
+
+
