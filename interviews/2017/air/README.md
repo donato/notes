@@ -47,13 +47,16 @@ source venv/bin/activate
 pip install -r requirements
 python run.py
 
-
+# In a separate terminal
 curl \
     -H "Content-Type: application/json" \
     -X POST -d \
-    '{"head": {"url": "abc"}, \
-    "tail": {"url": "cde"}, \
-    "output": {}, \
+    '{"head": {"url": "prom.mp4"}, \
+      "tail": {"url": "lake.mp4"}, \
+      "output": { \
+          "type": "local", \
+          "location": "output.mp4" \
+      }, \
     "authorization":"xyz", \
     "webhooks": {}}' \
     localhost:9009/concat/
@@ -68,3 +71,9 @@ curl \
 * https://superuser.com/questions/1059245/ffmpeg-join-two-mp4-files-with-ffmpeg-on-command-line
 * https://stackoverflow.com/questions/7172784/how-to-post-json-data-with-curl-from-terminal-commandline-to-test-spring-rest
 * http://flask-restful.readthedocs.io/en/latest/quickstart.html
+
+
+*Round 2*
+https://github.com/kkroening/ffmpeg-python
+https://trac.ffmpeg.org/wiki/Concatenate#differentcodec
+https://github.com/opencoconut/ffmpeg
