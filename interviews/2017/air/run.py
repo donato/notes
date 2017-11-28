@@ -1,6 +1,6 @@
 import json
 
-from flask import Flask
+from flask import Flask, request
 from flask_restful import Resource, Api, reqparse
 
 
@@ -18,32 +18,26 @@ def ClipArgument(input):
     return input['url']
 
 def OutputArgument(input):
-    return input
+    return {
+        'type': input['type'],
+        'location': input['location']
+    }
 
 class Concat(Resource):
     def post(self):
-        parser = reqparse.RequestParser()
-        parser.add_argument('head', type=ClipArgument)
-        parser.add_argument('tail', type=ClipArgument)
-        parser.add_argument('output', type=OutputArgument)
-        parser.add_argument('authorization')
-        parser.add_argument('webhooks')
-        args = parser.parse_args()
+        json = request.json
 
-        head_file = args['head']
-        tail_file = args['tail']
-        output_type = args['output']['type']
-        output_location = args['output']['location']
-        webhook = args['webhooks']['url']
-        authorization = args['authorization']
+        head_file = json['head']['url']
+        tail_file = json['tail']['url']
+        output_type = json['output']['type']
+        output_location = json['output']['location']
+        webhook = json['webhook_url']
+        authorization = json['authorization']
 
-        # authorize(head_file, tail_file, webhook, authorization)
+        #authorize(head_file, tail_file, webhook, authorization)
         concat(head_file, tail_file, output_location)
         # trigger_webhooks()
-        """
-
-        """
-        return args, 200
+        return json, 200
 
 api.add_resource(Root, '/')
 api.add_resource(Concat, '/concat/')

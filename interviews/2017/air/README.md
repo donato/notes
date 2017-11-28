@@ -13,8 +13,10 @@ Write a web service which:
 
 ### Scope
 - Don't worry about concurrency or error-handling
-Start time: 7pm EST
 
+Start time: 7pm EST
+Stop at 9:10pm
+Resume at 9:50pm
 
 ### API
 ```json
@@ -51,14 +53,14 @@ python run.py
 curl \
     -H "Content-Type: application/json" \
     -X POST -d \
-    '{"head": {"url": "prom.mp4"}, \
-      "tail": {"url": "lake.mp4"}, \
-      "output": { \
-          "type": "local", \
-          "location": "output.mp4" \
-      }, \
-    "authorization":"xyz", \
-    "webhooks": {}}' \
+    '{"head": {"url": "lake.mp4"}, 
+      "tail": {"url": "lake.mp4"}, 
+      "output": { 
+          "type": "local", 
+          "location": "output.mp4" 
+      },
+    "authorization":"xyz",
+    "webhook_url": "url"}' \
     localhost:9009/concat/
 ```
 
