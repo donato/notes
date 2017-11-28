@@ -37,5 +37,34 @@ POST BODY {
 }
 
 Response 200
+```
+
+## How to run
+
+```sh
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements
+python run.py
 
 
+curl \
+    -H "Content-Type: application/json" \
+    -X POST -d \
+    '{"head": {"url": "abc"}, \
+    "tail": {"url": "cde"}, \
+    "output": {}, \
+    "authorization":"xyz", \
+    "webhooks": {}}' \
+    localhost:9009/concat/
+```
+
+
+
+## Things I googled
+*Round 1*
+* https://stackoverflow.com/questions/43069780/how-to-create-virtual-env-with-python3
+* https://bitmovin.com/webhooks-encoding-api/
+* https://superuser.com/questions/1059245/ffmpeg-join-two-mp4-files-with-ffmpeg-on-command-line
+* https://stackoverflow.com/questions/7172784/how-to-post-json-data-with-curl-from-terminal-commandline-to-test-spring-rest
+* http://flask-restful.readthedocs.io/en/latest/quickstart.html
