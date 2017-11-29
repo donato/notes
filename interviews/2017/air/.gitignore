@@ -1,0 +1,5 @@
+output.mp4
+secrets.yml
+venv
+__PYCACHE__
+test/*.mp4
