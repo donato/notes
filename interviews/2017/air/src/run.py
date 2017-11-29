@@ -1,11 +1,9 @@
-import json
-
 from flask import Flask, request
 from flask_restful import Resource, Api, reqparse
 
-
-from encoder import concat
 from cloud import get_file_public_url, put_file_to_s3
+from config import cfg
+from encoder import concat
 
 
 app = Flask(__name__)
@@ -33,9 +31,10 @@ class Concat(Resource):
         tail_file = json['tail']['path']
         tail_file_location = json['tail']['location']
         output_type = json['output']['type']
-        output_location = json['output']['location']
-        webhook = json['webhook_url']
         authorization = json['authorization']
+
+        if authorization != cfg["AUTHORIZATION_KEY"]:
+            return 401
 
         if head_file_location == 'web':
             local_head_file = get_file_public_url(head_file)
@@ -50,16 +49,19 @@ class Concat(Resource):
         else:
             raise 'Bad file location'
 
-        #authorize(head_file, tail_file, webhook, authorization)
         tmp_file = concat(local_head_file, local_tail_file)
 
-        s3_url = put_file_to_s3(tmp_file)
-        print(s3_url)
+        if output_type == 'web':
+            output_file = put_file_to_s3(tmp_file)
+        else:
+            output_file = tmp_file
+
+        print(output_file)
 
         # trigger_webhooks()
+
         return {
-            "request": json,
-            "output": s3_url
+            "output": output_file
         }, 200
 
 api.add_resource(Root, '/')
