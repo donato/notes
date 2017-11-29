@@ -16,7 +16,7 @@ Write a web service which:
 
 ### API
 
-```json
+```sh
 POST \<api\>/concat/
 POST BODY {
     head: {
@@ -106,12 +106,12 @@ curl \
 * http://flask-restful.readthedocs.io/en/latest/quickstart.html
 
 *Round 2*
-https://github.com/kkroening/ffmpeg-python
-https://trac.ffmpeg.org/wiki/Concatenate#differentcodec
-https://github.com/opencoconut/ffmpeg
+* https://github.com/kkroening/ffmpeg-python
+* https://trac.ffmpeg.org/wiki/Concatenate#differentcodec
+* https://github.com/opencoconut/ffmpeg
 
 *Round 3*
-https://github.com/boto/boto3/issues/330
-https://stackoverflow.com/questions/22676/how-do-i-download-a-file-over-http-using-python
-http://docs.python-requests.org/en/master/user/quickstart/
+* https://github.com/boto/boto3/issues/330
+* https://stackoverflow.com/questions/22676/how-do-i-download-a-file-over-http-using-python
+* http://docs.python-requests.org/en/master/user/quickstart/
 

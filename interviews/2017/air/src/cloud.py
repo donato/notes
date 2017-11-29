@@ -55,6 +55,3 @@ def get_file_public_url(file):
     print('writing file ({url}) to {output}'.format(url=file, output=tmp_file_path))
     return tmp_file_path
 
-
-#get_file_public_url('http://donato.s3.amazonaws.com/prom.mp4')
-#put_file_s3('/tmp/4cf03bf1-de24-45ea-a5da-e688d5585efd.mp4', 'abc')

@@ -13,15 +13,6 @@ class Root(Resource):
     def get(self):
         return {'version': 'v0.1.0'}
 
-def ClipArgument(input):
-    return input['url']
-
-def OutputArgument(input):
-    return {
-        'type': input['type'],
-        'location': input['location']
-    }
-
 class Concat(Resource):
     def post(self):
         json = request.json
