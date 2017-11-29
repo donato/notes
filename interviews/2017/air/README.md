@@ -57,6 +57,10 @@ pip install -r requirements
 
 # Now update your secrets in the secrets.yml file
 cp secrets.yml.template secrets.yml
+
+# Download test videos
+curl https://s3.amazonaws.com/donato/lake.mp4 > ~/git/notes/interview/2017/air/test/lake.mp4
+curl https://s3.amazonaws.com/donato/prom.mp4 > ~/git/notes/interview/2017/air/test/prom.mp4
 ```
 
 To test it:
