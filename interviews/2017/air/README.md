@@ -53,7 +53,7 @@ cd notes/interviews/2017/air
 
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements
+pip3 install -r requirements.txt
 
 # Now update your secrets in the secrets.yml file
 cp secrets.yml.template secrets.yml

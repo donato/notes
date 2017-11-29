@@ -9,11 +9,17 @@ from encoder import concat
 app = Flask(__name__)
 api = Api(app)
 
-class Root(Resource):
-    def get(self):
-        return {'version': 'v0.1.0'}
 
 class Concat(Resource):
+
+    def _get_file(self, file, location):
+        if location == 'web':
+            return get_file_public_url(file)
+        elif location == 'local':
+            return file
+        else:
+            raise 'Bad file location'
+
     def post(self):
         json = request.json
 
@@ -27,18 +33,8 @@ class Concat(Resource):
         if authorization != cfg["AUTHORIZATION_KEY"]:
             return 401
 
-        if head_file_location == 'web':
-            local_head_file = get_file_public_url(head_file)
-        elif head_file_location == 'local':
-            local_head_file = head_file
-        else:
-            raise 'Bad file location'
-        if tail_file_location == 'web':
-            local_tail_file = get_file_public_url(tail_file)
-        elif tail_file_location == 'local':
-            local_tail_file = tail_file
-        else:
-            raise 'Bad file location'
+        local_head_file = self._get_file(head_file, head_file_location)
+        local_tail_file = self._get_file(tail_file, tail_file_location)
 
         tmp_file = concat(local_head_file, local_tail_file)
 
@@ -47,15 +43,13 @@ class Concat(Resource):
         else:
             output_file = tmp_file
 
-        print(output_file)
-
         # trigger_webhooks()
 
         return {
             "output": output_file
         }, 200
 
-api.add_resource(Root, '/')
+
 api.add_resource(Concat, '/concat/')
 
 if __name__ == '__main__':
