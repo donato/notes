@@ -1,2 +1,5 @@
 flask-restful
 ffmpeg-python
+boto3
+pyyaml
+requests

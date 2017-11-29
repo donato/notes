@@ -14,9 +14,15 @@ Write a web service which:
 ### Scope
 - Don't worry about concurrency or error-handling
 
-Start time: 7pm EST
-Stop at 9:10pm
-Resume at 9:50pm
+Nov 27 Start time: 7pm EST
+Nov 27 Stop at 9:10pm
+Nov 27 Resume at 9:50pm
+Nov 27 Stop at 10:20
+Nov 27 Start at 10:35pm
+Nov 27 Stop at 10:55pm
+
+Nov 28 Start at 8:20pm
+
 
 ### API
 ```json
@@ -47,6 +53,9 @@ Response 200
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements
+
+cp secrets.yml.template secrets.yml
+# Now update your secrets in the secrets.yml file
 python run.py
 
 # In a separate terminal
@@ -79,3 +88,8 @@ curl \
 https://github.com/kkroening/ffmpeg-python
 https://trac.ffmpeg.org/wiki/Concatenate#differentcodec
 https://github.com/opencoconut/ffmpeg
+
+*Round 3*
+https://github.com/boto/boto3/issues/330
+https://stackoverflow.com/questions/22676/how-do-i-download-a-file-over-http-using-python
+http://docs.python-requests.org/en/master/user/quickstart/
