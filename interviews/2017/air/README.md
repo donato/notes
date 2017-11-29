@@ -29,10 +29,12 @@ Nov 28 Start at 8:20pm
 POST \<api\>/concat/
 POST BODY {
     head: {
-        url: 'path to publicly accessible mp4 file'
+        path: 'path to publicly accessible mp4 file',
+        location: 'web'
     },
     tail: {
-        url: 'path to publicly accessible mp4 file'
+        path: 'path to publicly accessible mp4 file',
+        location: 'local'
     },
     output: {
         type: 'local', # or s3
@@ -62,8 +64,21 @@ python run.py
 curl \
     -H "Content-Type: application/json" \
     -X POST -d \
-    '{"head": {"url": "lake.mp4"}, 
-      "tail": {"url": "lake.mp4"}, 
+    '{"head": {"path": "test/prom.mp4", "location": "local"}, 
+      "tail": {"path": "test/lake.mp4", "location": "local"}, 
+      "output": { 
+          "type": "local", 
+          "location": "output.mp4" 
+      },
+    "authorization":"xyz",
+    "webhook_url": "url"}' \
+    localhost:9009/concat/
+    
+curl \
+    -H "Content-Type: application/json" \
+    -X POST -d \
+    '{"head": {"path": "https://s3.amazonaws.com/donato/lake.mp4", "location": "web"}, 
+      "tail": {"path": "https://s3.amazonaws.com/donato/prom.mp4", "location": "web"}, 
       "output": { 
           "type": "local", 
           "location": "output.mp4" 
