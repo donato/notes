@@ -1,0 +1,56 @@
+"""
+# Given an array which is in ascending order until some point and descending after that, find the peak number
+
+
+This seems like a binary search type problem
+
+At each iteration we want to halve the amount of array left to search (or identify the exact spot
+"""
+from math import floor
+
+
+
+def dumb_algo(arr):
+    for i in range(len(arr))[1:]:
+        if arr[i] < arr[i-1]:
+            return i
+
+
+def algo(arr):
+    # Strategy
+    #   Binary search
+    #     Note: When finding a "tie" we do not know if we passed the point or not
+    #           In this case we can only safely bring in an outer bound
+
+    return do_search(arr, 0, len(arr) - 1)
+
+counter = 0
+def do_search(arr, left, right):
+    global counter
+    counter = counter+1
+    if counter == 10:
+        return
+    print("Do search %s %s" % (left, right))
+    if right - left <= 1:
+        return left
+
+    middle = floor((right + left)/2)
+
+    # Handle duplicates
+    middle_backup = middle
+    while arr[middle] == arr[middle-1]:
+        if middle == right:
+            return do_search(arr, left, middle_backup)
+        middle = middle +1
+
+
+    is_increasing = arr[middle] > arr[middle-1]
+
+    if is_increasing:
+        return do_search(arr, middle, right)
+    else:
+        return do_search(arr, left, middle)
+
+#                           V         o        V
+test_array = [ 1, 2, 3, 4, 100, 120, 120, 120, 10, 5, 4, 3, 2, 1]
+print(algo(test_array))

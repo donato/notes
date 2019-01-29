@@ -1,7 +1,8 @@
-# Challenge: Given a collection of Building objects, find the largest rectangle that can be found in their silhoutetes.
-#   A building is defined by two x values and a height.
+# Challenge: Given a collection of Building objects, find the largest rectangle that can be found in the skyline that they create together.
+#   A building is defined by two x values and a height. Buildings may overlap, or not.
 from collections import namedtuple
 from recordclass import recordclass
+from sortedcontainers import SortedList
 
 Building = namedtuple('Building', ['left', 'right', 'height'])
 
@@ -55,7 +56,7 @@ class Candidate(recordclass('Candidate', ['left', 'right', 'height'])):
 
 class CandidateRectangles:
     candidate_list = []
-    active_buildings = set()
+    active_buildings = set() # Using a heap would make add() take log(N) but then GET_MAX would be constant time
     current_max_height = 0
     current_best_candidate = Candidate(0,0,0)
 
@@ -73,15 +74,15 @@ class CandidateRectangles:
         self.current_max_height = new_max_height
 
     def _update_candidate_list(self, new_height, location):
-        for candidate in self.candidate_list:
+        for candidate in self.candidate_list: # O(n)
             if candidate.height > new_height:
                 candidate.right = location
-                self.candidate_list.remove(candidate)
-                if candidate.get_size() > self.current_best_candidate.get_size():
+                self.candidate_list.remove(candidate) # O(n)
+                if candidate.get_size() > self.current_best_candidate.get_size(): # O(1)
                     self.current_best_candidate = candidate
 
     def _get_max_height(self):
-        # Keeping candidates sorted may help here
+        # Use a heap to make this Constant)
         max_h = 0
         for building in self.active_buildings:
             max_h = max(building.height, max_h)
@@ -105,18 +106,24 @@ def get_loc(point):
 
 def algo(buildings):
     all_points = []
+
+    # O(2n)
     for b in buildings:
         all_points.append(Point('start', b.left, b))
         all_points.append(Point('end', b.right, b))
 
     # For ties, we want to sort by Type (start then end), then X (asc) then height desc
+    # O(nlogn)
     sorted_points = sorted(all_points, key=get_loc)
 
     candidates = CandidateRectangles()
+    #O(n)
     for point in sorted_points:
         if point.type == 'start':
+            # constant
             candidates.add(point.Building)
         else:
+            #
             candidates.end(point.Building)
 
     rect = candidates.get_largest_rect()
@@ -126,3 +133,4 @@ def algo(buildings):
 
 
 algo(test_buildings)
+

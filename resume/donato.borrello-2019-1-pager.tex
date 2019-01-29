@@ -1,0 +1,228 @@
+\documentclass[oneside, final]{scrartcl}
+ \pdfmapfile{fontawesome.map}
+% For line-spacing of header
+%  http://ftp.math.purdue.edu/mirrors/ctan.org/macros/latex/contrib/soul/soul.pdf
+\usepackage{soul}
+
+% For fancy title
+\usepackage{titlesec}
+
+% For comments
+\usepackage{verbatim}
+
+% For the icons
+\usepackage{marvosym}
+%\usepackage{fontspec}
+\usepackage{fontawesome}
+
+% For greying of skills
+\usepackage{tabularx,colortbl}
+
+\usepackage[
+    margin=2cm
+]{geometry}
+
+\addtolength{\oddsidemargin}{-.25in}
+\addtolength{\evensidemargin}{-.25in}
+\addtolength{\topmargin}{-.30in}
+\addtolength{\textheight}{1.75in}
+\addtolength{\textwidth}{.5in}
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape}
+\definecolor{light-gray}{gray}{0.9}
+\newcommand{\lang}[1]{\colorbox{light-gray}{\texttt{#1}}}
+
+ 
+\begin{document}
+\begin{center}
+ 
+\textsc{\LARGE{\so{Donato E. Borrello}}}\\
+\so{351 West 51st St \#2, New York, NY 10019}\\
+{\Large\Letter} venar303@gmail.com \ {\Large\Telefon} (917) 280-0069 \ \faGithub \ github.com/donato
+
+\vspace{-5pt}
+
+
+\section{Experience}
+\begin{comment}
+\textsc{Software Engineer \hfill February 2018 - Present\\}
+\textsc{Google \hfill New York, NY\\}
+\begin{itemize}
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\leftmargin}{-5mm}
+	\item Designed and lead global strategy for Ads Transparency across all Connected TV devices including Apple TV, Roku, FireTV and Chromecast.
+	\item Oversaw implementation of GDPR compliance for digital Video Advertising, responsible for over 100M ad impressions per day.
+	\item Identified, planned and executed major refactor of Sdk, allowing core components to be made immutable.
+	\item Adviser to four 8+ engineer teams as part of Googles Tech Immersion program. 
+	%\item Recruited, hired and couched new hires, while performing dozens of interviews and phone-screens.
+\end{itemize}
+\end{comment}
+
+\textsc{Tech Lead Manager\hfill April 2016 - Jan 2018\\}
+\textsc{JW Player \hfill New York, NY\\}
+\begin{itemize}
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\leftmargin}{-5mm}
+	\item Emphasized automation and iteration to increase release velocity from 2/month to 3/week.
+	\item Drove data architecture decisions when scaling data systems, from 15k req/sec to 60k req/sec.
+	\item Interviewed, hired and built out the Data team from 8 members to 30, as part of four independent teams.
+	\item Revamped processes for Database Changes and Incident Response to 70 engineers across 8 teams; decreasing service outages from 0.15\% to 0.01\% weekly.
+	\item Perform technical comparisons and break-even analysis of technology stacks, then negotiated package pricing with cloud providers including AWS, Snowflake and ModeAnalytics.
+	% \item Rolled out Database Change process to 50 engineers across 6 teams.
+	% \item Created onboarding program for new engineers which has helped 20+ new hires hit the ground running.
+\end{itemize}
+
+\textsc{Senior Software Engineer\hfill May 2014 - April 2016\\}
+\textsc{JW Player \hfill New York, NY\\}
+\begin{itemize}
+	\setlength{\itemsep}{1pt}
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\leftmargin}{-5mm}
+        \item Redesigned the Javascript message bus for higher performance, shaving 20\% off startup time, across 1 billion plays per month.
+        \item Lead Engineer on implementing VPAID2 specification from the IAB, HLS standard from Apple, and Chromecast from Google.
+        \item Prototyped and built a full-stack testing framework combining automated and manual tests. Regression testing decreased from 4 weeks to 1.5 weeks.
+\end{itemize}
+
+\textsc{Software Engineer\hfill June 2012 - April 2014\\}
+\textsc{FactSet Research Systems \hfill New York, NY\\}
+\begin{itemize}
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\leftmargin}{-5mm}
+	\item Technical Lead on several web applications, setting the record for fastest rendering time among hundreds.
+	\item Created a tool \textit{p4-compare}, which let developers compare the cyclomatic complexity of their code
+	changes against master before checking it in.
+	\item Built out a toolkit for rapidly prototyping new reports, allowing teams in New York, Norwalk and London to search and share code as reusable modules.
+	%\item Learned to maintain, extend, and love legacy codebases. Or at least love refactoring them.
+\end{itemize}
+
+\begin{comment}
+
+\textsc{Full Stack Game Developer\hfill June 2008 - April 2012\\}
+\textsc{Freelance\hfill New York, NY\\}
+\begin{itemize}
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\leftmargin}{-5mm}
+	\item Created a new interface to a text-based MMORPG, to enhance and improve fundamental gameplay.
+    \item Provided real-time analytics comparing 800+ registered users - at peak popularity 50k writes per day.
+    \item Wrote bots to simulate human interaction, automating every aspect of gameplay. Required header-
+            spoofing, captcha cracking, and basic NLP. (Don’t tell the admins!)
+\end{itemize}
+
+
+    \textsc{Research Fellowship with Xerox\hfill Rochester, NY\\}
+    \textsc{University of Rochester HCI Lab \hfill June 2011 - May 2012\\}
+    \textsc{Research Fellowship with Xerox\hfill Rochester, NY\\}
+    \begin{itemize}
+      % \vspace{-8pt}
+      \setlength{\itemsep}{1pt}
+      \setlength{\parskip}{0pt}
+      \setlength{\parsep}{0pt}
+      \setlength{\leftmargin}{-5mm}
+          \item Researched crowd-sourced real-time audio transcription for hearing-impaired internet users.
+          \item Developed a management application for Amazon Mechanical Turk which allowed faster iteration on experiments.
+          \item Awarded Xerox Fellowship for contributions to real-time processing of crowd inputs.
+          \item Participated in project planning, design, and development of services for gathering and retaining Amazon Mechanical Turk workers.
+    \end{itemize}
+\end{comment}
+
+\section{Education}
+Bachelor of Science, Computer Science\hfill May 2012\\
+University of Rochester\hfill Rochester, NY\\
+
+ \section{Conferences and Publications}
+    
+\begin{flushleft}
+
+ %    \textbf{The Elusive Video Metric} \hfill July 2017\\
+  %  A talk at the Video Tech NYC meetup on identifying the quality of video content, independent from number of plays or likes it's received. Attended by over 100 developers.
+  %\vspace{10pt}
+
+  %  \textbf{Agile Incident Response for Big Data Systems} \hfill December  2016\\
+    %An article on how data teams can increase uptime while decreasing engineers stress by carefully aligning incentive systems and roles, published by JW Player.
+
+    %\vspace{10pt}
+
+    \textbf{The Nitty Gritty of Adaptive Video Transmuxing} \hfill May  2016\\
+    A technical talk at the EmpireJS Conference on efficiently transmuxing video in javascript for improving time to first frame, with over 400 attendees.
+
+    \vspace{10pt}
+
+    \textbf{Real time Captioning by Non-Experts} \hfill October  2012\\
+    A white-paper on crowd-sourcing as an alternative to professional services for economically viable audio transcription. Nominated for best paper in the the 25th Annual UIST Conference.
+
+  %  \vspace{10pt}
+
+%    \textbf{Election Reform New York} \hfill February  2017 - Present\\
+%    Founder of a non-profit group, partnered with FairVote, to bring Ranked Choice Voting to New York State.
+\end{flushleft}
+
+
+
+    \section{Skills}
+    \begin{itemize}
+        \setlength{\itemsep}{1pt}
+        \setlength{\parskip}{0pt}
+        \setlength{\parsep}{0pt}
+        \setlength{\leftmargin}{-5mm}
+        \item Performance, Scalability, Systems Architecture, A/B Testing, Leadership, Mentoring
+          \vspace{2pt}
+
+        \item Programming Languages:
+            \lang{C++},
+            \lang{Javascript},
+            \lang{Python},
+            \lang{Java},
+            \lang{Node}, and
+            \lang{SQL} \\
+        \item Data Experience: 
+            \lang{Spark},
+            \lang{Storm},
+            \lang{Kafka},
+            \lang{Hadoop/MR},
+            \lang{Hive}, and
+            \lang{GraphX} \\
+            
+       \begin{comment}
+
+       \item \textbf{Interests:}
+            \lang{Music},
+            \lang{Election Reform},
+            \lang{Gardening}, and
+            \lang{Data Visualization} \\
+            
+            
+            
+        \item \textbf{Favorite Places:}
+            \lang{New York},
+            \lang{Puglia},
+            \lang{Turks'n Caicos},
+            \lang{Tamarindo}, and
+            \lang{Buenos Aires}
+            \end{comment}
+
+    \end{itemize}
+    
+
+\begin{comment}
+
+
+% End first page
+\clearpage
+
+
+\end{comment}
+
+\end{center}
+\end{document}
