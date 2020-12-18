@@ -19,16 +19,20 @@
 \usepackage{tabularx,colortbl}
 
 % For page margins
-\usepackage[ margin=2cm ]{geometry}
-
-\addtolength{\oddsidemargin}{-.25in}
-\addtolength{\evensidemargin}{-.25in}
-\addtolength{\topmargin}{-.30in}
-%\addtolength{\textheight}{1.75in}
-\addtolength{\textwidth}{.5in}
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ top=12mm,
+ left=13mm,
+ right=13mm,
+ bottom=15mm,
+}
 
 % Remove page numbering
-\thispagestyle{empty}
+\pagestyle{empty}
+% Remove page numbering on a single page
+%\thispagestyle{empty}
 
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
 
@@ -40,17 +44,14 @@
 \begin{center}
 
 \textsc{\LARGE{\so{Donato E. Borrello}}}\\
-\so{351 West 51st St \#2, New York, NY 10019}\\
-{\Large\Letter} venar303@gmail.com \ {\Large\Telefon} (917) 280-0069 \ \faGithub \ github.com/donato
+\so{123 Sherman Ave, Unit \#A, Jersey City, NJ 07307}\\
+{\large\Letter} venar303@gmail.com \ {\Large\Telefon} (917) 280-0069 \ \faGithub \ github.com/donato
 
-\vspace{-5pt}
+  \vspace{-5pt}
 
-\input{experience.tex}
+  \input{experience.tex}
 
-% End first page
-%\clearpage
-
-\input{other.tex}
+  \input{other.tex}
 
 \end{center}
 \end{document}
