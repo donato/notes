@@ -20,6 +20,9 @@
 % For links
  \usepackage{hyperref}
 
+% For experience boxing
+\usepackage[most]{tcolorbox}
+
 % For page margins
 \usepackage{geometry}
 \geometry{
@@ -41,13 +44,20 @@
 \definecolor{light-gray}{gray}{0.9}
 \newcommand{\lang}[1]{\colorbox{light-gray}{\texttt{#1}}}
 
+
+\newcommand{\employer}[2]{
+  \textsc{#1}
+  \begin{tcolorbox}[breakable, boxsep=0pt, left skip=1em, colback=white,frame hidden,sharp corners,enhanced,borderline west={2pt}{2pt}{blue}]
+    #2
+  \end{tcolorbox}
+}
+
+\newcommand{\role}[2]{#1 \hfill #2}
+
 \newcommand{\experiencelist}[1]{
+  \vspace{-0.5em}
   \begin{itemize}
-    \setlength{\itemsep}{1pt}
-    \setlength{\itemsep}{1pt}
     \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}
-    \setlength{\leftmargin}{-5mm}
     #1
   \end{itemize}
 }
@@ -57,14 +67,11 @@
 
 \textsc{\LARGE{\so{Donato E. Borrello}}}\\
 {\large\Letter} venar303@gmail.com \ {\Large\Telefon} (917) 280-0069 \ \faGithub \ github.com/donato% \ \faGithub \ github.com/donato-google
-\
-  \vspace{-5pt}
-
 
   \begin{flushleft}
   \input{academics.tex}
-  \input{other.tex}
   \input{experience.tex}
+  \input{other.tex}
   \input{skills.tex}
   \end{flushleft}
 
