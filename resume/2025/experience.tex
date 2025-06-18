@@ -21,40 +21,49 @@
 
 \employer{
 	Google\\
-	\textit{Video Monetization in Google Ad Manager}
+	\textit{Ad Manager - Video, full-stack engineer}
+  % \hfill 1200 commits | 1800 reviews
 }{
 	\role{Staff Engineer}{2024 - Present}
 	\experiencelist{
-	\item Led video industry response to Privacy Sandbox for VAST advertising,
-		publishing \href{https://github.com/google/ads-privacy/tree/master/proposals/protected-audience-video}{Protected Audience API for Video}.
-		Revenue estimation of 9 figures.
+	\item Led video industry response to Privacy Sandbox for VAST advertising, by
+		publishing a
+    \link{technical spec}{https://github.com/google/ads-privacy/tree/master/proposals/protected-audience-video}.
+    Cited by Chromium and IAB OpenRTB working groups, and implemented by Google Ad Manager, DV360, Google Ads and (third-party) Criteo.
+	\item Created a 'Zero-Latency' roadmap and within 6 months reduced ad playback latency by 70\% on key Connected-TV segments, recognized by Paramount (CBS).
+  \item Designed a Predictive Ads Downloading system that combines offline video playback with just-in-time
+    ad decisioning to maximize revenue. A key innovation is predicting targeting parameters instead of the
+    winning ad. Decreases latency by up to 92\%.
+  % \item The PAD model uses input from an offline pipeline and real-time signals. Implementation at scale
+  %   uses multi-layer caching, multi-layer cache-invalidations, as well as adjustments to frequency-capping and
+  %   competitive exclusions mechanisms.
+  \item Created and led a task force to improve fraud detection on Connected-TV while
+      improving inventory access, across 4 product areas despite teams having opposing incentives.
+}
 
-	\item Created a 'Zero-Latency' roadmap for instream video through design
-		of a predictive ads downloading system, using local creative caching.
-		% Initial results have a realized impact of 70\% on key Connected-TV segments.
-	}
-			
 
 	\role{Tech Lead / Manager}{2021 - 2024}
 	\experiencelist{
-	\item Lead for a suite of video developer SDKs, responsible for O(10 Trillion) ad requests/year and 3x growth in impressions in my tenure.
+	\item Lead for a suite of video developer SDKs, responsible for 10T+ ad requests/year and 3x growth in impressions in my tenure.
 
-    \item Launched third-party app monetization on Google TV, through design of SDKs, rendering, signal collection and user transparency.
-	% \item Emphasized developer scalability and investments in tooling + productivity, to mitigate toil from platform-based fragmentation.
+  \item Launched third-party app monetization on Google TV, through design of SDKs, rendering, signal collection and user transparency.
 
-	% \item Developed the next generation of leads, including 4 promotions, while growing the team from 4 to 9 members.
+	\item Improved developer scalability by emphasizing transferrable coding patterns and automation;
+    enabling a team of 10 to drive development across 16 binaries with minimal toil due to platform fragmentation.
+
+	\item Developed the next generation of leads, including 4 promotions, while growing the team from 4 to 9 members.
 	}
 
 	
 	\role{Senior Software Engineer}{2018 - 2021}
 	\experiencelist{
-	\item Designed, built, and launched (1.5B devices) a full-stack system to enable Google-Ads personalization to video advertising in third-party Android apps.
+	\item Designed, built, and launched to 1.5B devices a full-stack system to enable Google-ID personalization to video advertising in third-party Android apps.
 
 	\item This system set the standard for user privacy and has been expanded to solve for gBid (2023), AdMob (2023), GoogleTV (2024) and Waze (2025).
 
-	% \item Lead for client implementations of GDPR, CCPA and COPPA compliance for digital video advertising, impacting 2B+ impressions/day.
+  \item Addressed scalability concerns via multi-level caching and security concerns including nation-state attackers, spies and quantum-based crypto attacks.
 
-	% \item This system is live for 1B+ devices, enabling low-latency cross-device advertising and unlocked a critical business partnership.
+	% \item Lead for client implementations of GDPR, CCPA and COPPA compliance for digital video advertising, impacting 2B+ impressions/day.
 
 	% \item Design and lead global strategy for Ads Transparency for Connected TV devices including Android TV, Apple TV, Roku, FireTV and Chromecast.
 
@@ -70,13 +79,16 @@
 
 	\role{Engineering Manager}{2016 - 2018}
 	\experiencelist{
-		\item Interviewed, hired and built out the Data organization from 8 members to 30, as part of four independent teams.
+		\item Interviewed, hired and built out the Data organization from 8 data engineers to 30, as part of four independent teams.
 
 		\item Redesigned data pipelining architecture to reduce service outages from 0.15\% to 0.01\% while scaling from 15k req/sec to 60k req/sec.
 
-		% \item Perform technical comparisons and break-even analysis of technology stacks, then negotiated package pricing with cloud providers including AWS, Snowflake and ModeAnalytics.
+		\item Increased release velocity from 2/month to 3/week through automation and streamlining operational overhead.
+
+		\item Perform technical comparisons and break-even analysis of technology stacks, then negotiated package pricing with cloud providers including AWS, Snowflake and ModeAnalytics.
+
 		% \item Successfully helped principal and senior engineers with career planning and coaching, through humbleness and asking questions.
-		% \item Emphasized automation and iteration to increase release velocity from 2/month to 3/week.
+
 		% \item Revamped processes for Database Changes and Incident Response to 70 engineers across 8 teams; decreasing service outages from 0.15\% to 0.01\% weekly.
 	}
 
@@ -84,30 +96,36 @@
 	\role{Senior Software Engineer}{2014 - 2016}
 	\experiencelist{
 	\item Developed a high performance video player, lead for implementing VPAID2, HLS and Chromecast support.
+
+	\item Redesigned the Javascript message bus for higher performance, shaving 20\% off startup time, across 1 billion plays per month.
+
 	\item Built a testing framework combining automated and manual tests, reducing regression testing time from 4 weeks to 1.5 weeks.
-	% \item Redesigned the Javascript message bus for higher performance, shaving 20\% off startup time, across 1 billion plays per month.
 	}
 }
 
 
-\employer{FactSet Research Systems}{
+\employer{
+  FactSet Research Systems \\
+  \textit{FinTech Engineering, primarily C++ reports
+}}{
 	\role{Software Engineer}{2012 - 2014}
 	\experiencelist{
 		\item Technical Lead on several web applications, setting the record for fastest rendering time among hundreds.
 		\item Learned to maintain, extend, and love legacy codebases. Or at least love refactoring them.
-		% \item Created a tool \textit{p4-compare}, which let developers compare the cyclomatic complexity of their code
-		% changes against the baseline before committing it.
-		% \item Built out a toolkit for rapidly prototyping new reports, allowing teams in New York, Norwalk and London to search and share code as reusable modules.
+		\item Created a tool \textit{p4-compare}, which let developers compare the cyclomatic complexity of their code
+		changes against the baseline before committing it.
+		\item Built out a toolkit for rapidly prototyping new reports, allowing teams in New York, Norwalk and London to search and share code as reusable modules.
 	}
-
 }
 
 
-\employer{University of Rochester HCI Lab}{
+\employer{
+  University of Rochester HCI Lab \\
+  \textit{ML Research on improving usefulness of human inputs}}{
 	\role{Research Scientist}{2011 - 2012}
 	\experiencelist{
-		\item Researched crowd-sourced real-time audio transcription for hearing-impaired internet users.
 		\item Awarded Xerox Fellowship for contributions to real-time processing of crowd inputs.
-		% \item Developed a management application for Amazon Mechanical Turk which allowed faster iteration on experiments.
+		\item Researched crowd-sourced real-time audio transcription for hearing-impaired internet users.
+    \item Developed a management application for Amazon Mechanical Turk which allowed faster iteration on experiments.
 	}
 }

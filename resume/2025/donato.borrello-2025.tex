@@ -18,7 +18,9 @@
 \usepackage{tabularx,colortbl}
 
 % For links
- \usepackage{hyperref}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\newcommand{\link}[2]{{\underline{\color{blue}\href{#2}{#1}}}}
 
 % For experience boxing
 \usepackage[most]{tcolorbox}
@@ -27,10 +29,10 @@
 \usepackage{geometry}
 \geometry{
  a4paper,
- top=15mm,
+ top=20mm,
  left=18mm,
  right=18mm,
- bottom=15mm,
+ bottom=20mm,
 }
 
 % Remove page numbering
@@ -55,7 +57,7 @@
 \newcommand{\role}[2]{#1 \hfill #2}
 
 \newcommand{\experiencelist}[1]{
-  \vspace{-0.5em}
+  % \vspace{-0.5em}
   \begin{itemize}
     \setlength{\parskip}{0pt}
     #1
@@ -69,8 +71,10 @@
 {\large\Letter} venar303@gmail.com \ {\Large\Telefon} (917) 280-0069 \ \faGithub \ github.com/donato% \ \faGithub \ github.com/donato-google
 
   \begin{flushleft}
-  \input{academics.tex}
+  \input{summary.tex}
+  \input{research.tex}
   \input{experience.tex}
+  \input{education.tex}
   \input{other.tex}
   \input{skills.tex}
   \end{flushleft}
